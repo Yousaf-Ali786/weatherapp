@@ -1,12 +1,34 @@
-# React + Vite
+Weather Forecast App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app is a weather forecast app built using React Vite. Tailwind CSS has been used for styling.
 
-Currently, two official plugins are available:
+Functionalities:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Search weather by city name
+Display current weather with temperature, humidity, wind speed, and condition
+5-day weather forecast
+Latest weather news section ( NOT WORKING IN DEPLOYED VERSION because of free trial of the newsapi)
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Live Demo: https://ultimate-weather-forecast-app.netlify.app/
+
+Why News is Not Being Fetched: The NewsAPI free plan does not allow requests directly from the browser (client-side). This is a limitation of the free tier, so the news section does not work when deployed on Netlify.
+
+APIs Used:
+
+
+OpenWeather API for weather data (current weather and 5-day forecast)
+
+NewsAPI for fetching weather-related news articles (currently not working - see below)
+
+
+
+
+Commands: To install dependencies:
+
+ npm install
+
+To run the app locally:
+
+ npm run dev
+
